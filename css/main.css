@@ -1,0 +1,251 @@
+div{outline: 1px solid red;}
+/* estilos comunes*/
+html, body{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+body{width: 100%;}
+img{
+  max-width: 100%;
+  height: auto;
+  vertical-align: top;
+}
+a,a:hover{
+  text-decoration: none;
+}
+a{
+  color: inherit;
+}
+ul li{
+  list-style:none;
+  display: inline-block;
+}
+/*header*/
+.header h4{
+  margin-top: 0;
+  margin-bottom: 0;
+  display: inline-block;
+}
+.main-menu{
+  margin-bottom: 0;
+  padding-left: 0;
+}
+.main-menu li{
+  padding: 0;
+
+}
+.main-menu li>a{
+  padding: 6px 15px;
+  transition: all .5s;
+}
+.main-menu li>a:hover{
+  background: black;
+  color:#0DC0C0;
+}
+.header{
+  background:url(../img/background/hero.jpg) no-repeat top right ;
+  -webkit-background-size: cover;
+        -moz-background-size: cover;
+   -o-background-size: cover;
+  background-size: cover;
+  color: white;
+  background-color: black;
+}
+.header .row{
+  margin: 20px 0;
+}
+.header .icon:first-child img{float: left;}
+
+.hero{
+  padding: 180px 100px;
+  color:#fff;
+}
+/*Hace la imagen mas opaca*/
+.opacity-background{ background-color: rgba(0, 0, 0, 0.8);}
+
+.hero h1{ font-size: 42px;}
+.hero p{
+  padding: 30px 0;
+  font-size: 18px;
+}
+.hero button, .call-action button{
+  color:#fff;
+  background-color: rgba(211,211,211,0.1);
+  font-weight: bold;
+  margin-left: 10px;
+  font-size: 16px;
+  border-radius: 0px;
+}
+.hero button{
+  margin: 10px 20px;
+}
+.hero button:hover{
+  background: #384147;
+  color: inherit;
+  border: 1px solid #384147;
+}
+#features .row{
+  margin-top: 40px;
+  padding: 0 100px;
+  margin-right: 0;
+}
+#features .col-md-4{
+  padding: 20px 50px;
+}
+#features .icon{
+  display: block;
+  margin: 20px auto;
+}
+#features h5{font-weight: bold;}
+
+.features-title,#portfolio,#pricing, .price{
+  padding-top: 60px;
+  background: #F4F4F4;
+}
+#portfolio{
+  padding-bottom: 20px;
+}
+#portfolio .menu-portfolio li{
+  padding: 0;
+}
+#portfolio .menu-portfolio li>a{
+  background: white;
+  font-weight: bold;
+  padding: 5px 10px;
+  width: 100%;
+  color:black;
+}
+#portfolio .menu-portfolio li>a:hover{
+  background: #0DC0C0;
+  color:white;
+}
+
+#portfolio .col-md-6{
+  padding: 10px;
+}
+#portfolio .row{
+  background: inherit;
+}
+.thumbnail{
+  padding: 10px;
+  border:1px solid #9D9D9D;
+ }
+.thumbnail>img{
+  width: 100%;
+}
+.thumbnail>.caption{
+   padding-top: 4px;
+ }
+.caption p{
+  color:gray;
+}
+#portfolio h4{
+   margin-bottom: 0;
+   margin-top:0;
+   font-weight: bold;
+
+ }
+ #portfolio button, #pricing button{
+   background: black;
+   color: #F4F4F4;
+   font-weight: bold;
+ }
+
+ /*call to action*/
+ .call-action{
+   background: url(../img/background/city.jpg)top center;
+   color: white;
+ }
+ .call-action>.opacity-background{
+  padding: 200px 0;
+ }
+.call-action button{
+  margin-top: 100px;
+}
+
+/*pricing*/
+#pricing{
+  padding-top: 40px;
+  padding-bottom: 80px;
+}
+.package {
+  padding: 30px 20px;
+  background: white;
+  border: 1px solid #98A0A8;
+}
+.package-title{
+  background: #24282E;
+  padding: 30px 0;
+  color: white;
+}
+.premium{
+  background:#0DC0C0;
+}
+.price span{
+  font-size: 40px;
+}
+.price{
+  padding-top: 0;
+}
+.price p{
+  padding: 30px 0;
+  font-size: 16px;
+}
+.list-group{
+  margin: 25px 25px 10px;
+}
+.list-group>li{
+  border-bottom: none;
+  border-right: none;
+  border-left: none;
+  color:#98A0A8;
+  padding: 20px 0;
+}
+.list-group li:first-child{
+  border-top: none;
+}
+.list-group li:last-child{
+  border-bottom: 1px solid #ddd;
+}
+
+/*customer*/
+.customer{
+  padding: 50px 0;
+}
+.customer .imagen{
+  margin: 40px auto 10px;
+  width: 100px;
+}
+/*contact*/
+#contact{
+  color:white;
+  background: url(../img/background/contactus.jpg)no-repeat top center;
+}
+#contact>.opacity-background{
+  padding: 70px 50px;
+}
+input {
+  margin:15px 0;
+  border-radius: 0;
+  background-color: rgba(211,211,211,0.3);
+}
+input:last-child{
+  height: 100px;
+  padding-bottom: 70px;
+}
+#contact button{
+  background: #0DC0C0;
+  color:white;
+  font-weight: bold;
+}
+.follow{
+  padding: 70px 0;
+}
+/*footer*/
+.footer{
+  background:#24282E;
+  color: #C9D1D6;
+  padding: 20px 0;
+  font-size: 11px;
+}
