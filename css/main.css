@@ -28,6 +28,20 @@ button.btn{
   font-size: 18px;
 }
 h2{font-size: 32px;}
+
+/*estilos boton arriba*/
+.ir-arriba {
+	display:none;
+	padding:10px 20px;
+	background:#2D323A;
+	font-size:24px;
+	color:#E8EDEF;
+	cursor:pointer;
+	position: fixed;
+	bottom:20px;
+	right:20px;
+}
+
 /*header*/
 .header h3{
   margin-top: 0;
@@ -35,6 +49,7 @@ h2{font-size: 32px;}
   display: inline-block;
 
 }
+
 .main-menu{
   margin-bottom: 0;
 }
@@ -43,12 +58,14 @@ h2{font-size: 32px;}
 }
 .main-menu li>a{
   padding: 6px 15px;
-  transition: all .5s;
 }
 .main-menu li>a:hover{
   background: black;
+  font-weight: bold;
   color:#0DC0C0;
 }
+.main-menu li{  transition: all .25s;}
+.main-menu li:hover{  transform: scale(1.2);}
 .header{
   background:url(../img/background/hero.jpg) no-repeat left top;
   -webkit-background-size: cover;
@@ -87,7 +104,7 @@ h2{font-size: 32px;}
 }
 .hero button:hover,.call-action button:hover{
   background: #384147;
-  color: inherit;
+  color: #F4F4F4;
   border: 1px solid #384147;
 }
 /*end header*/
