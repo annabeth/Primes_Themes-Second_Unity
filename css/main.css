@@ -2,8 +2,8 @@
 /* estilos comunes*/
 html, body{
   margin: 0;
-  padding: 0;
   width: 100%;
+  padding: 0;
 }
 body{width: 100%;}
 img{
@@ -182,6 +182,10 @@ h2{font-size: 32px;}
 .thumbnail{
   padding: 10px;
   border:1px solid #9D9D9D;
+  -webkit-box-shadow: 1px 1px 2px 0px #98A0A8;
+  -moz-box-shadow: 1px 1px 2px 0px #98A0A8;
+  box-shadow: 1px 1px 2px 0px #98A0A8;
+  border-radius:0;
  }
 .thumbnail>img{
   width: 100%;
@@ -228,9 +232,14 @@ h2{font-size: 32px;}
   margin-bottom: 40px;
 }
 .package {
+  margin-bottom: 30px;
   padding: 30px 20px;
   background: white;
   border: 1px solid #98A0A8;
+  -webkit-box-shadow: 1px 1px 2px 0px #98A0A8;
+  -moz-box-shadow: 1px 1px 2px 0px #98A0A8;
+  box-shadow: 1px 1px 2px 0px #98A0A8;
+
 }
 .package-title{
   background: #24282E;
@@ -341,43 +350,52 @@ input:last-of-type{
   font-size: 12px;
 }
 /*media queries*/
-@media (max-width:990px){
-  .section h2{font-size: 40px;}
-  .hero h1{
-    font-size: 60px;
-  }
-  .hero p{
-    padding-top: 0;
-  }
+@media (max-width:990px) and (min-width:768px){
+  .section h2{font-size: 30px;}
+  .hero h1{font-size: 45px;}
+  .hero p{ padding-top: 0; }
   #more-features .media{
     margin-bottom: 30px;
   }
   .main-menu li>a{
-    font-size: 16px;
+    font-size: 14px;
   }
 
   .section h2+p,.price p, .customer p,.contact h2+p{
     font-size:20px;
   }
-  .contact h2{ font-size: 40px;}
-  .price p{
-    padding: 70px 0;
-  }
-  #pricing h2+p{
-    margin-bottom: 0;
-  }
+  .contact h2{ font-size: 30px;}
+  .price p{ padding: 70px 0; }
+  .price span{ font-size: 32px};
+  #pricing h2+p{ margin-bottom: 0; }
   #pricing .list-group li, .list-group button{
     font-size: 18px;
   }
 
   #portfolio .menu-portfolio li>a{
-    font-size: 20px;
+    font-size: 16px;
   }
-  .package{
-    margin-bottom: 50px;
-  }
-  .follow p{
-    padding: 20px 170px;
-  }
+
+  .follow p{ padding: 20px 170px;}
   input.form-control{font-size: 18px;}
+
+}
+
+@media (max-width:769px) and (min-width:501px){
+  #features  .row{ padding: 0 20px;}
+  #contact [class*="col-"]{padding: 0 15px;}
+  #contact>.opacity-background{padding: 12px 20px;}
+}
+
+@media (max-width:500px){
+  .section h2{font-size: 25px;}
+  .hero h1{
+    font-size: 40px;
+  }
+  .main-menu li>a{ padding: 6px 11px;}
+  #portfolio .menu-portfolio li>a{font-size: 12px;}
+  #features  .row{ padding: 0 20px;}
+  #contact [class*="col-"]{padding: 0 15px;}
+  #contact>.opacity-background{padding: 12px 20px;}
+
 }
