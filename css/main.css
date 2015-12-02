@@ -68,7 +68,7 @@ h2{font-size: 32px;}
   color:#fff;
 }
 /*Hace la imagen mas opaca*/
-.opacity-background{ background-color: rgba(0, 0, 0, 0.8);}
+.opacity-background{ background-color: rgba(0, 0, 0, 0.6);}
 
 .hero h1{ font-size: 42px;}
 .hero p{
@@ -195,11 +195,11 @@ h2{font-size: 32px;}
    color: white;
  }
  .call-action>.opacity-background{
-  padding: 200px 5%;
+  padding: 150px 5%;
  }
 .call-action h3 { line-height: 2;}
 .call-action button{
-  margin-top: 100px;
+  margin-top: 50px;
 }
 
 /*pricing*/
